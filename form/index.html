@@ -1,20 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #formpage {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            margin: 2% 10% 0% 10%;
+        }
+
+        label {
+            margin: 5px;
+        }
+
+        input {
+            width: fit-content;
+        }
+
+        button {
+            width: fit-content;
+            margin-top: 10px;
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 2px;
+            color: black;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <form action="#">
-            <label for="name">Name</label>
-            <input type="text">
-            <label for="name">Mobile Number</label>
-            <input type="number">
-            <button>Submit</button>
+        <div id="header">
+            <h2>St. Paul's College</h2>
+        </div>
+        <form action="#" id="formpage">
+
+            <label for="name">Your Name :
+                <input type="text">
+            </label>
+
+            <label for="name">Father Name :
+                <input type="text">
+            </label>
+
+            <label for="name">Mother Name :
+                <input type="text">
+            </label>
+
+            <label for="name">Addhar Number :
+                <input type="number">
+            </label>
+
+            <label for="name">Mobile NUmber :
+                <input type="number">
+            </label>
+
+            <label for="name">Gender : </label>
+
+            <!-- <div> -->
+                <label for="male">Male : 
+
+                    <input type="radio" id="male" name="name" value="male" >
+                </label>
+            <!-- </div> -->
+
+            
+            <!-- <div> -->
+                <label for="female">Female :
+
+                    <input type="radio" id="female" name="name" value="female" >
+                </label>
+            <!-- </div> -->
+
+            <label for="name">Email :
+                <input type="email">
+            </label>
+
+            <label for="name">Vil :
+                <input type="text">
+            </label>
+
+            <label for="name">Po :
+                <input type="text">
+            </label>
+
+            <label for="name">Ps :
+                <input type="text">
+            </label>
+
+            <label for="name">Dist :
+                <input type="text">
+            </label>
+
+            <button >Submit</button>
 
         </form>
     </div>
+    <script>
+
+    </script>
 </body>
+
 </html>
