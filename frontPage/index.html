@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Value Example</title>
+</head>
+<body>
+    <label for="formPage">Name :
+        <input type="text" id="myInput" placeholder="Type something...">
+    </label>
+
+    <!-- <input type="number" id="myInput" placeholder="Type something..."> -->
+     
+    <button id="myButton">Log Input Value</button>
+
+    <script>
+
+        //IT is work on only one input tag
+
+        // Get the button element
+        var buttonElement = document.getElementById('myButton');
+
+        // Add an event listener to the button
+        buttonElement.addEventListener('click', function() {
+            // Get the input element
+            var inputElement = document.getElementById('myInput');
+
+            // Get the value of the input element
+            var inputValue = inputElement.value;
+
+            // Log the value to the console
+            console.log(inputValue);
+        });
+    </script>
+</body>
+</html>

@@ -20,28 +20,29 @@
         .container {
             height: 100vh;
             width: 100vw;
+            border: 2px solid black;
         }
 
         #formpage {
             display: flex;
             flex-direction: column;
             border: 2px solid black;
-            margin: 2% 10% 0% 10%;
+            margin: 5px;
         }
 
         label {
-            margin: 5px;
+            margin: 4px;
         }
 
         input {
             width: fit-content;
+            border: 1px solid black;
         }
 
         button {
             width: fit-content;
-            margin-top: 10px;
-            border: 2px solid black;
-            border-radius: 50%;
+            margin: 2% 0% 5% 2%;
+            border: 1px solid black;
             padding: 2px;
             color: black;
         }
@@ -49,81 +50,209 @@
         h2 {
             display: flex;
             justify-content: center;
+            margin: 5px;
+            border: 2px solid black;
         }
+
+        .footertext {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #about{
+            display: flex;
+            padding: 0rem 1rem;
+            margin: 5px;
+            border: 2px solid black;
+        }
+        
+        @media (min-width:768px) {
+            .container {
+                height: 100vh;
+                width: 100vw;
+                border: 2px solid black;
+        }
+
+        #formpage {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            margin: 7px;
+        }
+
+        label {
+            margin: 5px;
+        }
+        
+        input {
+            width: fit-content;
+            border: 1px solid black;
+        }
+
+        button {
+            width: fit-content;
+            margin: 2% 0% 5% 2%;
+            border: 1px solid black;
+            padding: 2px;
+            color: black;
+        }
+        
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin: 7px;
+            border: 2px solid black;
+        }
+        
+        .footertext {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            margin: 7px;
+        }
+        #about{
+            display: flex;
+            padding: 0rem 1.3rem;
+            margin: 7px;
+            border: 2px solid black;
+        }
+    }
     </style>
 </head>
 
 <body>
     <div class="container">
+
         <div id="header">
             <h2>St. Paul's College</h2>
         </div>
-        <form action="#" id="formpage">
+
+        <div id="formpage">
 
             <label for="name">Your Name :
-                <input type="text">
+                <input type="text" class="main" placeholder="Your Name">
             </label>
 
             <label for="name">Father Name :
-                <input type="text">
+                <input type="text" class="main" placeholder="Father Name">
             </label>
 
             <label for="name">Mother Name :
-                <input type="text">
+                <input type="text" class="main" placeholder="Mother Name">
             </label>
 
             <label for="name">Addhar Number :
-                <input type="number">
+                <input type="number" class="main" placeholder="Addhar Number">
             </label>
 
             <label for="name">Mobile NUmber :
-                <input type="number">
+                <input type="number" class="main" placeholder="Mobile Number">
             </label>
 
             <label for="name">Gender : </label>
 
-            <!-- <div> -->
-                <label for="male">Male : 
-
-                    <input type="radio" id="male" name="name" value="male" >
-                </label>
-            <!-- </div> -->
-
-            
-            <!-- <div> -->
-                <label for="female">Female :
-
-                    <input type="radio" id="female" name="name" value="female" >
-                </label>
-            <!-- </div> -->
-
-            <label for="name">Email :
-                <input type="email">
+            <label for="male">Male :
+                <input type="radio" id="male" name="name" value="male" class="main">
             </label>
 
+
+            <label for="female">Female :
+                <input type="radio" id="female" name="name" value="female" class="main">
+            </label>
+
+            <label for="name">Email :
+                <input type="email" class="main" placeholder="Email">
+            </label>
+
+            <label for="name">Present Adderess :</label>
+
             <label for="name">Vil :
-                <input type="text">
+                <input type="text" class="main" placeholder="Village Name">
             </label>
 
             <label for="name">Po :
-                <input type="text">
+                <input type="text" class="main" placeholder="Post">
             </label>
 
             <label for="name">Ps :
-                <input type="text">
+                <input type="text" class="main" placeholder="Police Station">
             </label>
 
             <label for="name">Dist :
-                <input type="text">
+                <input type="text" class="main" placeholder="District">
             </label>
 
-            <button >Submit</button>
+            <label for="name">Permanent Adderess :</label>
 
-        </form>
+            <label for="name">Vil :
+                <input type="text" class="main" placeholder="Village Name">
+            </label>
+
+            <label for="name">Po :
+                <input type="text" class="main" placeholder="Post">
+            </label>
+
+            <label for="name">Ps :
+                <input type="text" class="main" placeholder="Police Station">
+            </label>
+
+            <label for="name">Dist :
+                <input type="text" class="main" placeholder="District">
+            </label>
+
+            <label for="name">University/College :
+                <input type="text" class="main" placeholder="University/College">
+            </label>
+
+            <!-- <button onclick="submit()">Submit</button> -->
+            <button id="myButton">Submit</button>
+
+        </div>
+
+        <div class="footertext">
+            <footer>
+                <p>&COPY; All Rights Reserved.</p>
+            </footer>
+            
+        </div>
+            <table id="about">
+                <tr>
+                    <th>Courses :-</th>
+                    <td>Science</td>
+                    <td>Commerce</td>
+                    <td>Arts</td>
+                    
+                </tr>
+                <tr>
+                    <th>Courses :-</th>
+                    <td>BSC</td>
+                    <td>BCOM</td>
+                    <td>BA</td>
+                    <td>BCA</td>
+                    <td>BBA</td>
+                    
+                </tr>
+                <tr>
+                    <th>About US :-</th>
+                    <td>
+                        <a href="#">Click Here</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Contact No. :- </th>
+                       <td>
+                           xxxxxxxxxx
+                       </td>                
+                </tr>
+            </table>
+            
     </div>
-    <script>
 
-    </script>
+    <script></script>
+
 </body>
 
 </html>
