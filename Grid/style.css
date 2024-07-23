@@ -12,7 +12,7 @@ body {
 .container {
     height: 100vh;
     width: 100vw;
-    background-color: aquamarine;
+    background-color: rgb(53, 54, 54);
     display: grid;
     padding: 4rem;
     /* gap: 1rem; */
@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(76, 251, 23);
+    background-color: rgb(28, 253, 3);
     border: 2px solid black;
 }
 
@@ -36,35 +36,43 @@ body {
     .footer {
         grid-column-start: 1;
         grid-column-end: 11;
+        background-color: rgb(40, 32, 32);
+        color: white;
     }
 
-    .main-content {
+    .Text-Sec {
         grid-column-start: 3;
         grid-column-end: 6;
         grid-row-start: 2;
-        grid-row-end: 4;
+        grid-row-end: 6;
+        background-color: black;
+        color: white;
     }
 
     .sidebar {
-        grid-column-start: 6;
-        grid-column-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 3;
         grid-row-start: 2;
-        grid-row-end: 4;
-    }
-
-    .twin1 {
-        grid-column-start: 3;
-        grid-column-end: 6;
-        grid-row-start: 4;
         grid-row-end: 6;
+        background-color: rgb(170, 52, 254);
     }
 
-    .twin2 {
+    .Ph-Sec {
         grid-column-start: 6;
-        grid-column-end: 9;
-        grid-row-start: 4;
+        grid-column-end: 10;
+        grid-row-start: 2;
         grid-row-end: 6;
+        background-color: beige;
     }
+
+    .Info {
+        grid-column-start: 10;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        background-color: rgb(49, 225, 167);
+    }
+
 
     .container {
         grid-template-columns: repeat(10, 1fr);
