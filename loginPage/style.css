@@ -12,7 +12,7 @@ body {
 .container {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(214, 220, 222);
+    background-color: #DCE4F4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +22,12 @@ body {
     height: 550px;
     width: 300px;
     /* background-color: bisque; */
-    background-color: rgb(234, 245, 241);
+    /* background-color: rgb(234, 245, 241); */
+    background-color: #F1F7FE;
     border-radius: 20px;
+     /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center;  */
 }
 
 #img {
@@ -38,9 +42,30 @@ img {
     width: 100px;
     border-radius: 50%;
 }
-
-
-input {
+#loginEmail{
+    display: flex;
+    /* align-self: center; */
+    /* place-self: center; */
+    /* flex: 1; */
+    flex-direction: column;
+    /* height: 50px; */
+    width: 240px;
+    background-color: #FEFFFE;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+/* .box{
+    display: flex;
+    flex-direction: row;
+} */
+input{
+    border: 0px ;
+}
+/* input {
     height: 60px;
     width: 80%;
     border-radius: 20px;
@@ -48,7 +73,7 @@ input {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 30px;
-}
+} */
 
 /* 
 #login input {
@@ -69,9 +94,9 @@ input {
     margin-bottom: 20px;
     margin-left: 30px;
     border-radius: 20px;
-    border: 2px solid rgb(5, 5, 58);
-    background-color: rgb(5, 5, 58);
-    color: #fff;
+    border: 2px solid #3E4785;
+    background-color: #3E4785;
+    color: #FDFCFF;
 }
 
 #last {
@@ -82,7 +107,19 @@ input {
 
 a {
     text-decoration: none;
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
+    color: #B2B6B8;
+    margin: 0 auto ;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+}
+
+#loginPassword{
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFFFE;
+    /* border: 1px solid black; */
+    width: 240px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
 }
