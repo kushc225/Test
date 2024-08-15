@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(4, 248, 4), orange);
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    height: 315px;
+    width: 421px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+a {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
