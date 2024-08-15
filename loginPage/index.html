@@ -21,10 +21,13 @@
 
             </div>
 
-            <div id="loginEmail">
+            <form id="myForm">
+
                 
-                <label for="email">Email Address</label>
-                
+                <div id="loginEmail">
+                    
+                    <label for="email">Email Address</label>
+                    
                 <div class="box">
                     <i class="fa-solid fa-envelope"></i>
                     
@@ -32,13 +35,14 @@
                 </div>
                 
             </div>
-            <!-- <span>Span tag</span> -->
+            <span id="error" style="color: red; display: none; margin: 50px;">This field is requried.</span>
+            
             
             <div id="loginPassword">
                 
                 <label for="password"></label>Password
                 <div class="passwordBox">
-
+                    
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" name="password" id="Password" placeholder="..........">
                     <!-- <i class="fa-solid fa-eye"></i> -->
@@ -47,15 +51,18 @@
                 
             </div>
 
+            <span id="errorPassword" style="color: red; display: none; margin: 50px;">This field is requried.</span>
+            
             <div id="login">
 
                 <label for="login"></label>
 
                 <!-- <input type="button" value="Login" id="myButton"> -->
                 
-                <button id="myButton">Login</button>
+                <button id="myButton" type="submit">Login</button>
                 
             </div>
+        </form>
             
             <div id="last">
                 
